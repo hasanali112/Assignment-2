@@ -155,12 +155,8 @@ features-container style here
     color: #727272;
 }
 
-.info-sub-title {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 53px;
+.title-second {
     color: #FF900E;
-    margin-bottom: 10px;
 }
 
 .info-description {
@@ -381,6 +377,105 @@ article {
     text-align: center;
 }
 
+/* contact-area */
+
+.contact-us {
+    margin: 68px 204px;
+    background: #FFF4E7;
+    border-radius: 5px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 16px;
+    padding-top: 58px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 37px;
+    color: #5d3fd3;
+}
+
+.get-in-touch form {
+    padding: 10px;
+    position: relative;
+    right: 30px;
+}
+
+.contact-area {
+    width: 200px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CCCCFF;
+    color: #5d3fd3;
+    padding-left: 11px;
+    position: relative;
+    left: 229px;
+}
+
+
+#last-name {
+    margin-left: 24px;
+}
+
+#phone {
+    margin-left: 24px;
+}
+
+.address {
+    width: 438px;
+    height: 62px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CCCCFF;
+    padding-left: 11px;
+    color: #5d3fd3;
+    position: relative;
+    left: 229px;
+}
+
+#massage {
+    width: 436px;
+    height: 73px;
+    border: none;
+    border-radius: 5px;
+    background-color: #CCCCFF;
+    padding-left: 15px;
+    padding-top: 13px;
+    margin: 12px 10px;
+    color: #5d3fd3;
+    position: relative;
+    left: 199px;
+}
+
+.btn-submit {
+    width: 60px;
+    height: 33px;
+    font-weight: 400;
+    font-size: 13px;
+    background: #FF900E;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    margin-top: 2px;
+    margin-left: 207px;
+}
+
+.reset {
+    width: 60px;
+    height: 33px;
+    font-weight: 400;
+    font-size: 13px;
+    background: #FF900E;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 28px;
+}
+
 
 .footer {
     margin: 100px 279px 45px 235px;
@@ -390,7 +485,7 @@ article {
     height: 65px;
 }
 
-.foot-title{
+.foot-title {
     font-weight: 400;
     font-size: 17px;
     line-height: 23px;
@@ -398,4 +493,128 @@ article {
     text-align: center;
     position: relative;
     top: 20px;
+}
+
+.hiden {
+    display: none;
+}
+
+/*---------------------------------
+ resposive stye here 
+ -----------------------------------------------------*/
+@media screen and (max-width:576px) {
+
+    .features-container {
+        width: 84%;
+        margin: 110px 34px;
+    }
+
+
+    .our-features {
+        display: flex;
+        gap: 2px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image-container div>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .feature-info {
+        position: relative;
+        top: 62px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .into-title {
+        font-weight: 700;
+        font-size: 41px;
+        line-height: 46px;
+        margin-bottom: 5px;
+    }
+
+
+    .enjoy-container {
+        width: 100%;
+        margin: 55px 24px;
+
+    }
+
+    .enjoy-container-info {
+        flex-direction: column;
+    }
+
+    .blog-ttitle {
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 48px;
+        color: #131313;
+        margin-top: 31px;
+        border-left: 5px solid #FF900E;
+        padding-left: 29px;
+    }
+
+    .article-detail {
+        padding: 7% 7%;
+    }
+
+    article {
+        width: 92%;
+        height: 92%;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgb(0 0 0 / 6%);
+        border-radius: 8px;
+        margin-top: 13px;
+    }
+
+    .blog-image img {
+        width: 95%;
+        height: 87%;
+        border-radius: 8px;
+    }
+
+    .btn-third {
+        width: 28%;
+        height: 71px;
+        background: rgb(255, 144, 14);
+        border-radius: 4px;
+        border: none;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 15px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        position: relative;
+        top: -53px;
+        left: -18px;
+    }
+
+    .third-span {
+        color: #FFFFFF;
+        font-size: 30%;
+        display: none;
+    }
+
+
+    .fact-title {
+        font-weight: 700;
+        font-size: 218%;
+        line-height: 34px;
+        color: #131313;
+        text-align: left;
+        margin-left: 19px;
+    }
+
+    .fact-description {
+        margin: 3px 2px 7px 18px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: left;
+    }
 }
