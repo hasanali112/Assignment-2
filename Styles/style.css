@@ -646,5 +646,57 @@ article {
         margin: 4px 3px;
         justify-items: center;
     }
+    /*-----------------------
+     contact style 
+     ----------------------------------------------*/
+    .contact-us {
+        margin: 69px 9px;
+        background: #FFF4E7;
+        border-radius: 5px;
+    }
 
+    .get-in-touch form {
+        position: relative;
+        right: 185px;
+    }
+    
+    #last-name {
+        margin-top: 16px;
+        margin-left: 0px;
+    }
+
+    #phone {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .address {
+        width: 201px;
+        height: 71px;
+        border: none;
+        border-radius: 5px;
+        background-color: #CCCCFF;
+        padding-left: 11px;
+        color: #5d3fd3;
+        position: relative;
+        left: 229px;
+    }
+
+    #massage {
+        width: 198px;
+        height: 89px;
+        border: none;
+        border-radius: 5px;
+        background-color: #CCCCFF;
+        padding-left: 15px;
+        padding-top: 13px;
+        margin: 12px 10px;
+        color: #5d3fd3;
+        position: relative;
+        left: 44px;
+    }
+
+    .btn-submit {
+        margin-left: 93px;
+    }
 }
