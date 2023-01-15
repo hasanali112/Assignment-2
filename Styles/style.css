@@ -114,7 +114,7 @@ bannar-image style
 /*--------------
 features-container style here 
 -------------------------------------------------------------*/
-.features-container {
+.features {
     margin: 109px 105px;
 }
 
@@ -274,7 +274,6 @@ article {
 
 
 /* fact style */
-
 .some-fact {
     margin: 130px 20px;
 }
@@ -298,49 +297,107 @@ article {
     text-align: left;
 }
 
-.fact-container {
+/*---------------------------------------------------
+ feature style here 
+ -------------------------------------------------------------------------*/
+.features-info {
+    position: relative;
+    top: 2px;
+}
+
+.features-container {
     display: flex;
-    gap: 61px;
-    margin: 0px 9px 4px 0px;
-    justify-content: center;
-    align-self: center;
+    gap: 35px;
     text-align: center;
+    margin-left: 154px;
 }
 
-.fact-detail {
+.info-box {
+    box-sizing: border-box;
+    width: 184px;
+    height: 196px;
     border: 1px solid rgb(255, 144, 14);
-    border-radius: 4px;
-    padding: 7px;
+    border-radius: 6px;
+    padding: 12px 15px 23px;
+    overflow: hidden;
 }
 
-.fact-detail img {
-    width: 53px;
-    height: 49px;
+.info-box img {
+    width: 35px;
+    height: 37px;
 }
 
-.fact-detail-title {
+.info-box .features-icon {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.content .content-title {
     font-weight: 600;
-    font-size: 41px;
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 50px;
     color: #424242;
+    margin-top: 4px;
+    margin-bottom: 3px;
 }
 
-.fact-detail-description {
+.content .content-description {
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 23px;
     color: #727272;
-    padding: 3px 3px;
 }
 
-.fact-details {
-    margin: 7px 12px;
+.features-container .info-box:nth-child(1) .features-icon {
+    box-shadow: 0 0 0 0 #fe9bd6;
+    background: #fe9bd6;
 }
 
-#fact-special {
-    margin: 8px 22px;
+.features-container .info-box:nth-child(1):hover .features-icon {
+    box-shadow: 0 0 0 200px #fe9bd6;
 }
 
+.features-container .info-box:nth-child(2) .features-icon {
+    box-shadow: 0 0 0 0 #23e629;
+    background: #23e629;
+}
+
+.features-container .info-box:nth-child(2):hover .features-icon {
+    box-shadow: 0 0 0 200px #23e629;
+}
+
+.features-container .info-box:nth-child(3) .features-icon {
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+}
+
+.features-container .info-box:nth-child(3):hover .features-icon {
+    box-shadow: 0 0 0 200px #2196f3;
+}
+
+.features-container .info-box:nth-child(4) .features-icon {
+    box-shadow: 0 0 0 0 #ffff00;
+    background: #ffff00;
+}
+
+.features-container .info-box:nth-child(4):hover .features-icon {
+    box-shadow: 0 0 0 200px #ffff00;
+}
+
+.features-container .info-box .content {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+/* Sponspors style */
 .sponspors-container {
     margin: 94px 120px 28px;
 }
@@ -495,13 +552,18 @@ article {
     top: 20px;
 }
 
-
+.hiden {
+    display: none;
+}
 
 
 /*---------------------------------
  resposive stye here 
  -----------------------------------------------------*/
 @media screen and (max-width:576px) {
+    body {
+        max-width: 100%;
+    }
 
     nav {
         flex-direction: column;
@@ -557,7 +619,7 @@ article {
 
     .features-container {
         width: 84%;
-        margin: 110px 34px;
+        /* margin: 110px 34px; */
     }
 
 
@@ -651,6 +713,12 @@ article {
         line-height: 13px;
     }
 
+    /* -----------------------
+   some fact style here  
+   -----------------------------------------------------*/
+    .features {
+        margin: 67px 15px;
+    }
 
     .fact-title {
         font-weight: 700;
@@ -669,9 +737,12 @@ article {
         text-align: left;
     }
 
-    .fact-container {
+    .features-container {
         flex-direction: column;
-        margin: 17px 40px 13px 37px;
+        justify-content: center;
+        align-items: center;
+        margin: 16px 34px 11px 34px;
+
     }
 
 
@@ -753,8 +824,8 @@ article {
     }
 
     .footer {
-        width: 88%;
-        height: 99px;
+        width: 95%;
+        height: 135px;
         margin: 33px 17px 34px 8px;
     }
 
