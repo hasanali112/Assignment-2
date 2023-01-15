@@ -495,14 +495,65 @@ article {
     top: 20px;
 }
 
-.hiden {
-    display: none;
-}
+
+
 
 /*---------------------------------
  resposive stye here 
  -----------------------------------------------------*/
 @media screen and (max-width:576px) {
+
+    nav {
+        flex-direction: column;
+        margin: 0px 40px;
+        padding: 22px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .nav-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 53px;
+        color: #131313;
+    }
+
+    .bannar-title {
+        text-align: center;
+        margin-top: 54px;
+        margin-bottom: 2px;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 49px;
+    }
+
+    .bannar-sub-title {
+        font-size: 46px;
+    }
+
+    .bannar-description {
+        text-align: center;
+        margin: 22px 13px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+        margin-bottom: 22px;
+    }
+
+    /* bannar img */
+    .bannar-img img {
+        width: 308px;
+        height: 184px;
+        margin-bottom: 35px;
+        position: relative;
+        right: 168px;
+    }
+
+
+
 
     .features-container {
         width: 84%;
@@ -573,20 +624,20 @@ article {
     }
 
     .blog-image img {
-        width: 95%;
-        height: 87%;
+        width: 91%;
+        height: 76%;
         border-radius: 8px;
     }
 
     .btn-third {
-        width: 28%;
-        height: 71px;
+        width: 51%;
+        height: 114px;
         background: rgb(255, 144, 14);
         border-radius: 4px;
         border: none;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 15px;
+        font-size: 41px;
+        line-height: 26px;
         color: rgb(255, 255, 255);
         text-align: center;
         position: relative;
@@ -596,8 +647,8 @@ article {
 
     .third-span {
         color: #FFFFFF;
-        font-size: 30%;
-        display: none;
+        font-size: 21px;
+        line-height: 13px;
     }
 
 
@@ -618,7 +669,7 @@ article {
         text-align: left;
     }
 
-    .fact-container{
+    .fact-container {
         flex-direction: column;
         margin: 17px 40px 13px 37px;
     }
@@ -628,7 +679,7 @@ article {
         margin: 58px 6px 50px;
     }
 
-   
+
     .sponspors-description {
         text-align: center;
         margin: 0px 11px;
@@ -639,16 +690,17 @@ article {
     }
 
     .sponsponrs-icon {
-        display:flex;
+        display: flex;
         gap: 20px;
         flex-direction: column;
         align-items: center;
         margin: 4px 3px;
         justify-items: center;
     }
+
     /*-----------------------
-     contact style 
-     ----------------------------------------------*/
+         contact style 
+         ----------------------------------------------*/
     .contact-us {
         margin: 69px 9px;
         background: #FFF4E7;
@@ -659,7 +711,7 @@ article {
         position: relative;
         right: 185px;
     }
-    
+
     #last-name {
         margin-top: 16px;
         margin-left: 0px;
@@ -699,4 +751,17 @@ article {
     .btn-submit {
         margin-left: 93px;
     }
+
+    .footer {
+        width: 88%;
+        height: 99px;
+        margin: 33px 17px 34px 8px;
+    }
+
+    .foot-title {
+        font-size: 20px;
+        position: relative;
+        top: 29px;
+    }
+
 }
