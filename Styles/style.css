@@ -617,4 +617,34 @@ article {
         line-height: 26px;
         text-align: left;
     }
+
+    .fact-container{
+        flex-direction: column;
+        margin: 17px 40px 13px 37px;
+    }
+
+
+    .sponspors-container {
+        margin: 58px 6px 50px;
+    }
+
+   
+    .sponspors-description {
+        text-align: center;
+        margin: 0px 11px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #727272;
+    }
+
+    .sponsponrs-icon {
+        display:flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin: 4px 3px;
+        justify-items: center;
+    }
+
 }
